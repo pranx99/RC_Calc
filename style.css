@@ -11,18 +11,20 @@ body {
 .main-container {
   margin: 100px auto;
   background-color: #202020;
-  height: 255px;
+  height: 305px;
   width: 300px;
   /* border-style: none; */
   /* border: 0px solid #202020; */
+  box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
 }
 
-.main-text-box input {
+.main-text-box {
   width: 290px;
-  height: 50px;
+  height: 75px;
   background-color: #202020;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
+  text-align: right;
 }
 
 textarea:focus,
@@ -45,4 +47,33 @@ input:focus {
   color: white;
   background-color: #3b3b3b;
   font-size: 16px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #4f4f4f;
+  transition: 0.3;
+}
+
+.btn--op {
+  background-color: #292929;
+}
+
+.btn-clr {
+  grid-column: 1 / span 2;
+  width: 150px;
+}
+
+.btn-arr {
+  grid-column: 3 / span 2;
+  width: 150px;
+}
+
+.btn-ans {
+  background-color: #f46762;
+}
+
+.btn-ans:hover {
+  background-color: #dc5d58;
+  transition: 0.3;
 }
